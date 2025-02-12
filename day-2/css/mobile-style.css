@@ -160,6 +160,10 @@ h3{
     align-items: center;
     justify-content: flex-end;
     padding-right: 10px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 2;
 }
 
 .upgrade{
@@ -168,12 +172,14 @@ h3{
     border: 1px solid #ffffff;
     border-radius: 25px;
     font-size: 15px;
+    background-color: #080b12
 }
 
 .upgrade:hover{
     background-color: #ffffff;
     color: #000000;
     font-weight: 700;
+    transition: 0.5s;
 }
 
 .categorie{
@@ -207,21 +213,23 @@ h3{
     }
 }
 
-.section-1{
+.section{
     padding: 0 20px;
 }
 
 h2{
     color: #ffffff;
+    margin-bottom: 20px;
 }
 
-.box-recenti{
+.box{
     padding: 20px 0;
     flex-wrap: wrap;
     gap: 20px;
+    margin-bottom: 40px;
 }
 
-.brani-recenti{
+.col{
     width: calc(100% / 2 - 20px);
     flex-direction: column;
     align-items: center;
@@ -258,11 +266,16 @@ h4{
     text-align: center;
 }
 
-.brani-recenti span{
+.col span, p{
     color: #7d7f84;
     font-size: 12px;
     font-weight: 700;
 }
+
+.subtitle{
+    text-align: center;
+}
+
 
 .descrizione{
     flex-direction: column;
@@ -270,7 +283,14 @@ h4{
     gap: 10px;    
 }
 
+.box-artista{
+    border-radius: 50%;   
+    overflow: hidden; 
+}
 
+.artista{
+    object-fit: cover;
+}
 
 
 
