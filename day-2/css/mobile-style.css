@@ -82,6 +82,20 @@ main{
     opacity: 0.5;
 }
 
+.link{
+    padding: 0;
+}
+
+.link li{
+    border-left: 3px solid transparent ;
+    padding: 0 15px 0 12px;
+}
+
+.link li:hover{
+    border-left: 3px solid #adff2f;
+}
+
+
 .menu a{
     align-items: center;
     gap: 10px;
@@ -252,7 +266,8 @@ h2{
 
 .copertina:hover{
     .img-copertina{
-        filter: brightness(60%);        
+        filter: brightness(60%); 
+        transition: 0.15s;       
     }
 
     .fa-circle-play{
