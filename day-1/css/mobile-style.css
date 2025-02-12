@@ -37,10 +37,15 @@ common
 body{
     font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
     background-color: #151922;
+    height: 100vh;
 }
 
 ul{
     list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -50,48 +55,95 @@ ul{
 ************************/
 
 main{
-    height: calc(100vh - 90px);
+    height: calc(100% - 90px);
 }
 
 .menu{
-    height: 100%;
     background-color: #000000;
-    padding: 12px 15px 15px 12px;
-    width: 12%;
+    padding: 12px 0 8px;
+    width: 60px;
+    flex-shrink: 0;
+    gap: 20px;
+    flex-direction: column;  
+    overflow: hidden;  
+}
+
+.menu > *{
+    padding: 0 15px 0 15px;
 }
 
 .logo-big{
     display: none;
-}
-
-.home-box{
-    flex-direction: column;
-    margin-top: 20px;
-    justify-content: space-between;
-    height: calc(100% - 32px - 12px - 20px);
+    padding-right: 40px;
 }
 
 
-.home-box img{
+.link, .playlist a, .install{
     opacity: 0.5;
 }
 
-
-.link li{
+.menu a{
     align-items: center;
+    gap: 10px;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
-.link li span{
+.link li span, .menu-bottom span{
     display: none;
+}
+
+.link span, .playlist span, .menu-bottom span{
+    font-size: small;
+}
+
+h3{
+    color: #ffffff;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.playlist{
+    display: none;
+}
+
+.playlist ul{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fa-plus{
+    color: #000000;
+    font-weight: 900;
+}
+
+.plus-btn{
+    background-color: #ffffff;
+    padding: 13px 15px;
+}
+
+.menu-bottom{
+    margin-top: auto;
+}
+
+.install{
+    opacity: 0.3;
+}
+
+.menu-bottom hr{
+    border: 1px solid #ffffff;
+    display: none;
+    margin-bottom: 15px;
 }
 
 .profile-img{
     background-color: #666666;
     border-radius: 50%;
-    padding: 0 10%;
 }
 
+.home{
+    flex-grow: 1;
+}
 
 /************************
     footer

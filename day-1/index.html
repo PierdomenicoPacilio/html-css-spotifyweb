@@ -17,15 +17,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- /link di stile del font -->     
 
-    <!-- /foglio di stile principale -->
+    <!-- foglio di stile principale -->
     <link rel="stylesheet" href="css/mobile-style.css">
     <!-- /foglio di stile principale -->
 
-    <!-- /foglio di stile tablet -->
+    <!-- foglio di stile tablet -->
     <link rel="stylesheet" href="css/tablet-style.css">
     <!-- /foglio di stile tablet -->
      
-    <!-- /foglio di stile desktop -->
+    <!-- foglio di stile desktop -->
     <link rel="stylesheet" href="css/desktop-style.css">
     <!-- /foglio di stile desktop -->    
 
@@ -33,22 +33,30 @@
 
 <body>
     <main class="container">
-        <div class="menu">
+        <div class="menu container">
             <img class="logo-small" src="../img/logo-small.svg" alt="Logo Spotify">
             <img class="logo-big" src="../img/logo.svg" alt="Logo Spotify">
-            <div class="container home-box">
-                <div>
-                    <ul class="link">
-                        <li class="container"><a href="#"><img src="../img/home.svg" alt="Home"><span>Home</span></a></li>
-                        <li class="container"><a href="#"><img src="../img/search.svg" alt="Search"><span>Cerca</span></a></li>
-                        <li class="container"><a href="#"><img src="../img/libreria.svg" alt="Libreria"><span>La Tua Libreria</span></a></li>
-                    </ul>
-                </div>
-                <div>
-                    <a href="#"><img src="../img/download.svg" alt="Download"></a>
-                    <a href="#"><img class="profile-img" src="../img/profile.svg" alt="Profile"></a>
-                </div>
-            </div>        
+            <ul class="link">
+                <li><a class="container" href="#"><img src="../img/home.svg" alt="Home"><span>Home</span></a></li>
+                <li><a class="container" href="#"><img src="../img/search.svg" alt="Search"><span>Cerca</span></a></li>
+                <li><a class="container" href="#"><img src="../img/libreria.svg" alt="Libreria"><span>La Tua Libreria</span></a></li>
+            </ul>
+            <div class="playlist">
+                <h3>PLAYLISTS</h3> 
+                <a class="container" href="#"><div class="plus-btn"><i class="fa-solid fa-plus"></i></div><span>Crea Playlist</span></a>
+                <ul class="container">
+                    <li><a href="#"><span>Nome Playlist</span></a></li>
+                    <li><a href="#"><span>Nome Playlist</span></a></li>
+                    <li><a href="#"><span>Nome Playlist</span></a></li>
+                    <li><a href="#"><span>Nome Playlist</span></a></li>
+                    <li><a href="#"><span>Nome Playlist</span></a></li>
+                </ul>
+            </div>
+            <div class="menu-bottom">
+                <a class="container install" href="#"><img src="../img/download.svg" alt="Download"><span>Installa App</span></a></a>
+                <hr>
+                <a class="container" href="#"><img class="profile-img" src="../img/profile.svg" alt="Profile"><span>Pierdomenico Pacilio</span></a>
+            </div>       
         </div>
         <div class="home">prova</div>
     </main>
