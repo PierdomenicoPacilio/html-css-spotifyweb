@@ -1,0 +1,29 @@
+@media screen and (min-width:768px){
+
+    .logo-small{
+        display: none;
+    }
+    .logo-big{
+        display: block;
+    }
+
+    .menu{
+        width: 230px;
+    }
+
+    .link li span, .menu-bottom span{
+        display: inline;
+    }
+
+    .link img, .playlist img, .menu-bottom img{
+        max-width: 25px;
+    }
+
+    .menu-bottom hr{
+        display: block;
+    }
+    
+    .playlist{
+        display: block;
+    }
+}
