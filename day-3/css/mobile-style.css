@@ -78,9 +78,18 @@ main{
 }
 
 
-.link, .playlist a, .install{
+/* .link, .playlist a, .install{
     opacity: 0.5;
+} */
+
+.opacity{
+    opacity: 0.5;    
 }
+
+.opacity:hover{
+    opacity: 1;
+}
+
 
 .link{
     padding: 0;
